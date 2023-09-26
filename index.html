@@ -2,27 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE-edge /" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="app.js" defer></script>
     <title>Drag AND Drop</title>
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="drag__container">
-      <div class="drag__item"><p class="drag">1</p></div>
-      <div class="drag__item"><p class="drag">2</p></div>
-      <div class="drag__item"><p class="drag">3</p></div>
-      <div class="drag__item"><p class="drag">4</p></div>
-      <div class="drag__item"><p class="drag">5</p></div>
+    <div class="kanban">
+      <div class="column">
+        <div class="item" draggable="true">Card 01</div>
+        <div class="item" draggable="true">Card 02</div>
+      </div>
+      <div class="column">
+        <div class="item" draggable="true">Card 03</div>
+        <div class="item" draggable="true">Card 04</div>
+      </div>
+      <div class="column">
+        <div class="item" draggable="true">Card 05</div>
+        <div class="item" draggable="true">Card 06</div>
+      </div>
+      <div class="column">
+        <div class="item" draggable="true">Card 07</div>
+        <div class="item" draggable="true">Card 08</div>
+      </div>
     </div>
 
-    <div class="drop__container">
-      <div class="drop__item"></div>
-      <div class="drop__item"></div>
-      <div class="drop__item"></div>
-      <div class="drop__item"></div>
-      <div class="drop__item"></div>
-    </div>
+    <script src="script.js"></script>
   </body>
 </html>
